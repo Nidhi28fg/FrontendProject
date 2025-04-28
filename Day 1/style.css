@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+form {
+    display: grid;
+    width: 300px;
+    margin: auto;
+    background-color: floralwhite;
+    padding: inherit;
+}
+body {
+    margin: auto 0px;
+    padding: 20px;
+    /* text-align: center; */
+    background-color: aliceblue;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label {
+    margin: 15px 0px;    
+}
+
+input[type=text] {
+    padding: 10px;
+}

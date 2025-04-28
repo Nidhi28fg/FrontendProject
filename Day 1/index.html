@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="write your name">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="write your email">
+        <label for="points">Points (between 0 and 5):</label>
+        <input type="range" id="points" name="points" min="0" max="5">
+        <span id="demo"></span>
+        <p><label for="w3review">Comment:</label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+        <input type="submit">
+    </form>
+
+    <script>
+    document.getElementById("points").addEventListener("input", myFunction);
+
+    function myFunction () {
+        let p = document.getElementById("demo");
+        let input = document.getElementById("points").value;
+        p.innerHTML = input;
+    }
+
+    </script>
+</body>
+</html>
