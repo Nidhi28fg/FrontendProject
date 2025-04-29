@@ -7,28 +7,43 @@
     <title>Feedback Form</title>
 </head>
 <body>
+
     <h1>Feedback Form</h1>
     <form action="">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="write your name">
+        <label for="name">FullName</label>
+        <input type="text" id="name" placeholder="Write your fullname" required>
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="write your email">
-        <label for="points">Points (between 0 and 5):</label>
+        <input type="text" id="email" placeholder="Write your email" required>
+        <!-- <label for="points">Points (between 0 and 5):</label>
         <input type="range" id="points" name="points" min="0" max="5">
-        <span id="demo"></span>
-        <p><label for="w3review">Comment:</label></p>
-  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-        <input type="submit">
+        <span id="demo"></span> -->
+       <p>Give Us Rating</p>
+        <div style="display: flex; margin-top: -20px;"><input type="radio" id="age1" name="age" value="1">
+            <label for="age1">1</label>
+            <input type="radio" id="age2" name="age" value="2">
+            <label for="age2">2</label>
+            <input type="radio" id="age3" name="age" value="3">
+            <label for="age3">3</label>
+            <input type="radio" id="age4" name="age" value="4">
+            <label for="age4">4</label>
+            <input type="radio" id="age5" name="age" value="5">
+            <label for="age5">5</label></p></div>
+        <label for="w3review">Comment:</label>
+        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Write your Comment" required></textarea>
+        <input id="submit" type="submit" value="Submit">
+        <p class="socailpara"> You Can Connect With Us By Socail Media</p>
     </form>
+  
+    
 
     <script>
-    document.getElementById("points").addEventListener("input", myFunction);
+    // document.getElementById("points").addEventListener("input", myFunction);
 
-    function myFunction () {
-        let p = document.getElementById("demo");
-        let input = document.getElementById("points").value;
-        p.innerHTML = input;
-    }
+    // function myFunction () {
+    //     let p = document.getElementById("demo");
+    //     let input = document.getElementById("points").value;
+    //     p.innerHTML = input;
+    // }
 
     </script>
 </body>
