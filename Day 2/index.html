@@ -1,65 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoorDash Food Delivery & Takeout - From Restaurants Near You</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
     <nav>
-        <div>DOORDASH</div>
-        <div><ul><li> Sign In</li> <li> Sign Up</li></ul></div>
-    </nav>
-    <section> <h1> Discover restaurants and more near you.</h1>
-    <input type="search" placeholder="Enter delivery address">
-    <button> Sign in for saved address</button>
-    </section>
-
-    <section>
-        <div>
-            <img src="">
-            <h2>Become a Dasher</h2>
-            <p>As a delivery driver, make money and work on your schedule. Sign up in minutes.</p>
-            <a>Start earning
-                </a>
+        <div class="navfirstsection">
+            <div class="door">DOORDASH</div>
+            <div>
+                <ul>
+                    <li class="signin"> Sign In</li>
+                    <li class="signup"> Sign Up</li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <img src="">
-            <h2>Become a Merchant
-            </h2>
-            <p>Attract new customers and grow sales, starting with 0% commissions for up to 30 days.</p>
-            <a>Sign up for DoorDash
+        <section>
+            <h1> Discover restaurants and more near you.</h1>
+            <div class="secnav">
+                <div class="secnavchild"><i class="fa-solid fa-location-dot"></i>
+                    <input type="search" placeholder="Enter delivery address">
+                </div>
+                <a><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <button> <i class="fa-regular fa-user"></i> Sign in for saved address</button>
+        </section>
+    </nav>
+    <section class="section1">
+        <div class="section1div">
+            <img class="section1divimg" src="https://cdn.doordash.com/media/consumer/home/landing/new/ScootScoot.svg">
+            <h2 class="section1h1">Become a Dasher</h2>
+            <p class="section1divp">As a delivery driver, make money and work on your schedule. Sign up in minutes.</p>
+            <a class="section1diva">Start earning <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
 
-        <div>
-            <img src="">
-            <h2>Get the best DoorDash experience</h2>
-            <p>Experience the best your neighborhood has to offer, all in one app.</p>
-            <a> Get the app</a>
+        <div class="section1div">
+            <img class="section1divimg" src="https://cdn.doordash.com/media/consumer/home/landing/new/Storefront.svg">
+            <h2 class="section1h1">Become a Merchant
+            </h2>
+            <p class="section1divp">Attract new customers and grow sales, starting with 0% commissions for up to 30
+                days.</p>
+            <a class="section1diva">Sign up for DoorDash <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="section1div">
+            <img class="section1divimg" src="https://cdn.doordash.com/media/consumer/home/landing/new/iphone.svg">
+            <h2 class="section1h1">Get the best DoorDash experience</h2>
+            <p class="section1divp">Experience the best your neighborhood has to offer, all in one app.</p>
+            <a class="section1diva"> Get the app <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="section21stdiv">
+            <h2 class="section2divh2">Everything you crave, delivered.
+            </h2>
+            <h4 class="section21stdivh4">Your favorite local restaurants</h4>
+            <p class="section21stdivp">Get a slice of pizza or the whole pie delivered, or pick up house lo mein from
+                the Chinese takeout spot
+                you've been meaning to try.</p>
+            <a class="find"> Find restaurants</a>
+        </div>
+        <div><img
+                src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/download_the_app_desktop.png">
+        </div>
+    </section>
+
+    <section class="section3">
+        <div><img
+                src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/dashpass_desktop.png">
+        </div>
+        <div class="section21stdiv">
+            <h2 class="section2divh2">DashPass is </br>delivery for less </h2>
+            </br>
+            <p class="section21stdivp">Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and
+                so much more. Plus, it's
+                free for 30 days.</p>
+            <a class="find"> Get DashPass</a>
+        </div>
+    </section>
+
+
+    <section id="section1">
+        <div class="section4">
+            <div class="section4div">
+                <h2 class="section1h1">Get grocery and convenience store essentials </h2>
+                <h4 class="section21stdivh4">Grocery delivery, exactly how you want it</h4>
+                <p class="section21stdivp">Shop from home and fill your cart with fresh produce, frozen entrees, deli
+                    delights and more.</p>
+                <a class="find"> Shop Groceries</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section5">
+        <div class="section51stdiv">
+            <h2 class="section2divh2">Convenience stores at your doorstep
+            </h2>
+
+            <p class="section51stdivp">Stock up on snacks, household essentials, candy, or vitamins - all delivered in
+                under an hour</p>
+            <a class="find"> Shop Now </a>
+        </div>
+        <div><img
+                src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/convenience_desktop.png">
+        </div>
+    </section>
+
+
+    <section class="section6">
+        <div class="section6divh2">
+            <h2>Helping you with to-dos and gifting
+            </h2>
+        </div>
+
+        <div class="section6div2nd">
+            <div>
+                <img
+                    src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/package_pickup_desktop.png">
+                <h2>Return packages from </br> home
+                </h2>
+                <p>Request a package pickup with just a few taps and get your returns dropped off at carriers like UPS,
+                    FedEx, and USPS.</p>
+                <a class="find"> Try Package Pickup </a>
+            </div>
+
+            <div>
+                <img
+                    src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/flowers_desktop.png">
+                <h2>Flowers for any occasion
+                </h2>
+
+                <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
+                <a class="find"> Send Flowers </a>
+            </div>
+
+
+            <div>
+                <img
+                    src=" https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/alcohol_desktop.png">
+                <h2>Restock the minibar
+                </h2>
+
+                <p>Hosting a get-together or need or need a special cocktail ingredient? Get liquor, beer, mixers,
+                    champagne
+                    and wine delivered fast.*</p>
+                <a class="find"> Shop Alcohol </a>
+                <p class="section6span">*Must be 21+. Enjoy responsibly.</p>
+            </div>
+
+
+            <div>
+                <img
+                    src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/pet_supplies_desktop.png">
+                <h2>What your pets need, and </br>want
+                </h2>
+
+                <p>Finally, something cat people and dog people agree on — pet supplies delivery. Shop pet food, chew
+                    toys,
+                    and even costumes.</p>
+                <a class="find"> Get Pet Supplies </a>
+
+            </div>
         </div>
     </section>
 
     <section>
-       <div>
-            <h2>Everything you crave, delivered.
+
+        <h2>Unlocking opportunity for Dashers and businesses
+        </h2>
+        <div>
+            <h2>Convenience stores at your doorstep
             </h2>
-            <h4>Your favorite local restaurants</h4>
-            <p>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.</p>
-            <a> Find restaurants</a></div>
-            <div><img src=""></div> 
+
+            <p>Deliver with the #1 Food and Drink App in the U.S. As a delivery driver, you'll make money and work on
+                your schedule. Sign up in minutes.</p>
+            <a> Became a Dasher</a>
+        </div>
+        <div><img src=""></div>
     </section>
 
     <section>
+        <div><img src=""></div>
+
         <div>
-             <h2>Everything you crave, delivered.
-             </h2>
-             <h4>Your favorite local restaurants</h4>
-             <p>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.</p>
-             <a> Find restaurants</a></div>
-             
-     </section>
+            <h2>Grow your business with DoorDash
+
+            </h2>
+
+            <p>Businesses large and small partner with DoorDash to reach new customers, increase order volume, and drive
+                more sales.</p>
+            <a> Became a Partner</a>
+        </div>
+
+    </section>
+
+
+    <section>
+        <h2>Get more from your neighborhood
+        </h2>
+
+        <div>
+            <p>Top Cities</p>
+            <p>Top Cuisines</p>
+            <p>Top Chains</p>
+        </div>
+
+        <div>
+            <div>
+                <ul>
+                    <li>New York</li>
+                    <li>Houston</li>
+                    <li>San Francisco</li>
+                    <li>Vancouver,BC</li>
+                </ul>
+                <ul>
+                    <li>Los Angeles</li>
+                    <li>Brooklyn</li>
+                    <li>Seattle</li>
+                    <li>Maimi</li>
+                </ul>
+                <ul>
+                    <li>Toronto</li>
+                    <li>San Diego</li>
+                    <li>Atlanta</li>
+                    <li>San Antonio</li>
+                </ul>
+                <ul>
+                    <li>Chicago</li>
+                    <li>Las Vegas</li>
+                    <li>Queens</li>
+                </ul>
+            </div>
+            <h3><select>See more </select> </h3>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <p> Popular Categories</p>
+        <div>
+            <ul>
+                <li>Alcohol Austrail</li>
+                <li>Alcohol Delivery Austrail</li>
+                <li>Back to School Delivery</li>
+                <li>Battle of the Brands</li>
+                <li>Beauty Stores</li>
+                <li>Beauty Supply</li>
+                <li>Catering Near Me</li>
+                <li>Chips Ahoy Big Cookie</li>
+            </ul>
+            <ul>
+                <li>Alcohol Austrail</li>
+                <li>Alcohol Delivery Austrail</li>
+                <li>Back to School Delivery</li>
+                <li>Battle of the Brands</li>
+                <li>Beauty Stores</li>
+                <li>Beauty Supply</li>
+                <li>Catering Near Me</li>
+                <li>Chips Ahoy Big Cookie</li>
+            </ul>
+            <ul>
+                <li>Alcohol Austrail</li>
+                <li>Alcohol Delivery Austrail</li>
+                <li>Back to School Delivery</li>
+                <li>Battle of the Brands</li>
+                <li>Beauty Stores</li>
+                <li>Beauty Supply</li>
+                <li>Catering Near Me</li>
+                <li>Chips Ahoy Big Cookie</li>
+            </ul>
+            <ul>
+                <li>Alcohol Austrail</li>
+                <li>Alcohol Delivery Austrail</li>
+                <li>Back to School Delivery</li>
+                <li>Battle of the Brands</li>
+                <li>Beauty Stores</li>
+                <li>Beauty Supply</li>
+                <li>Catering Near Me</li>
+                <li>Chips Ahoy Big Cookie</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>
+                <ul>
+                    <li>Get to Know us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Investors</li>
+                    <li>Company Blog</li>
+                    <li>Engineering Blog</li>
+                    <li>Merchant Blog</li>
+                    <li>Gift Cards</li>
+                    <li>Package Pickup</li>
+                    <li>Promotions</li>
+                    <li>Dasher Central</li>
+                    <li>Linkdin</li>
+                    <li>Glassdoor</li>
+                    <li>Accessibility</li>
+                    <li>Newsroom</li>
+                </ul>
+                <ul>
+                    <li>Let Us Help You</li>
+                    <li>Account Details</li>
+                    <li>Order History</li>
+                    <li>Help</li>
+                </ul>
+                <ul>
+                    <li>Doing Business</li>
+                    <li>Become a Dasher</li>
+                    <li>DoorDash Merchant</li>
+                    <li>Get Dashers for Deliveries</li>
+                    <li>Get DoorDash For Business</li>
+                </ul>
+            </div>
+            <div>
+                <img src="">
+                <img src="">
+            </div>
+        </div>
+
+
+        <div>
+            <div>
+                <p>DoorDash
+                </p>
+                <p>Terms of Service
+                </p>
+                <p>Privacy
+                </p>
+                <p>Delivery Locations
+                </p>
+                <p>Do Not Sell or Share My Personal Information
+                </p>
+                <p>© 2025 DoorDash </p>
+            </div>
+            <div><select> English (US)</select></div>
+            <div>
+                <img src=""><img src=""><img src="">
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+    height: 600px;
+    background-size: cover;
+    
+}
+
+.navfirstsection {
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 417px;
+
+}
+
+nav ul {
+  
+        list-style: none;
+        display: flex   ;
+        gap: 8px;
+}
+
+.signin {
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    background: #eb1700;
+    padding: 10px;
+    border-radius: 21px;
+}
+
+
+#section1of3div a, .find {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background: #eb1700;
+    padding: 10px;
+    border-radius: 21px;
+}
+
+li.signup {
+    color: #0e0d0d;
+    font-size: larger;
+    font-weight: 700;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 21px;
+}
+
+.door {
+    color: white;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 4px;
+}
+
+nav section {
+    text-align: center;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav section h1 {
+    color: white;
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.secnav {
+    width: 338px;
+    height: 21px;
+    padding: 20px;
+    border-radius: 38px;
+    border: none;
+    margin: 20px;
+    color: black;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    align-items: center;
+}
+
+.secnav a i {
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 6px;
+    color: white;
+    background: red;
+    width: 27px;
+}
+
+
+.secnavchild {
+    display: flex;
+        gap: 15px;
+}
+
+.secnavchild input {
+    border: none;
+    font-size: 17px;
+}
+
+
+nav section button {
+    padding: 10px;
+    width: 200px;
+    border-radius: 21px;
+    border: none;
+    color: black;
+    font-size: smaller;
+    font-weight: 700;
+}
+
+.section1 {
+    display: flex ;
+        justify-content: space-evenly;
+        height: 600px;
+        margin: 0px 136px;
+        text-align: center;
+        margin-top: 142px;
+}
+
+
+#section1of3div {
+    width: 400px;
+
+}
+
+
+#section1 {
+    color: white;
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png);
+    width: full;
+    background-position: center;
+    background-size: cover;
+}
+
+.section4 {
+    background-color: rgba(30, 30, 30, 0.6);
+    height: 600px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+
+}
+.section1div {
+        width: 232px;
+    }
+
+
+.section1h1 {
+    font-size: 40px;
+}
+
+.section2divh2 {
+    font-size: 40px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+
+
+.section5 {
+    display: flex;
+    justify-content: center;
+    gap: 106px;
+    align-items: center;
+    margin-top: 65px;
+}
+
+
+.section3 {
+    display: flex;
+        justify-content: center;
+        gap: 70px;
+        align-items: center;
+        background-color: #fef1ee;
+        padding-top: 83px;
+        padding-bottom: 20px;
+        margin-top: -46px;
+}
+
+.section21stdiv {
+    width: 400px
+}
+
+.section21stdivh4 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.section21stdivp {
+    margin-bottom: 40px;
+}
+
+.section1divimg {
+    width: 144px;
+}
+
+.section1divp {
+    font-size: medium;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 15px 0px;
+}
+
+.section1diva {
+    color: red;
+    font-weight: 700;
+}
+
+
+.section4div {
+    width: 400px;
+}
+
+.section51stdiv {
+    width: 372px;
+}
+
+
+.section51stdivp {
+    margin-top: 18px;
+    margin-bottom: 39px;
+}
+
+.section6 h2 {
+    text-align: center;
+    font-size: 36px;
+    line-height: normal;
+}
+
+.section6 {
+    background-color: #fef1ee;
+    padding-top: 84px;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6divh2 {
+    width: 442px;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.section6div2nd {
+    display: flex ;
+        flex-wrap: wrap;
+        margin: 50px 15px;
+        justify-content: center;
+}
+
+.section6div2nd > div {
+    width: 572px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+  
+.section6div2nd img {
+    width: 553px;
+}
+
+.section6div2nd p {
+    font-size: 17px;
+    line-height: normal;
+    margin: 18px 0px;
+    font-weight: 500;
+}
+
+.section6span {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
