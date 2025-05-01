@@ -293,3 +293,94 @@ nav section button {
     font-size: 14px !important;
     font-weight: 500 !important;
 }
+
+
+.section7 {
+    margin-top: 72px;
+}
+
+
+.section7divh2 {
+    text-align: center;
+    font-size: xx-large;
+    /* margin-bottom: 63px; */
+}
+
+
+.section7div2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    gap: 310px;
+    text-decoration: underline;
+}
+
+.section7div2ul {display: flex
+;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 91px;
+    margin-right: 251px;
+    line-height: 33px;
+}
+
+
+ul   {
+        list-style: none;
+    }
+
+    .select {
+        border: none;
+        font-size: large;
+        font-weight: 700;
+    }
+
+
+    footer {
+        background-color: black;
+        color: white;
+        padding-top: 35px;
+        padding-left: 50px;
+        padding-bottom: 40px;
+    }
+
+    .footerp {
+        padding-left: 145px;
+        line-height: 35px;
+    }
+
+
+    .section8div2ul {display: flex
+        ;
+            justify-content:flex-start;  
+            margin-top: 60px;
+            margin-left: 150px;
+            gap: 80px;
+            margin-right: 251px;
+            line-height: 33px;
+        }
+
+        .footerlast {
+            display: flex;
+            /* justify-content:; */
+            gap: 100px;
+            font-size: smaller;
+            margin-left: 70px;
+        }
+
+        .footerlast2 {
+            display: flex;
+            /* justify-content:; */
+            gap: 20px;
+            font-size: smaller;
+            margin-left: 70px;
+        }
+
+        .select2 {
+            font-size: medium;
+            padding: 5px;
+            border-radius: 15px;
+
+        }
+
+    
