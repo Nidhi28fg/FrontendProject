@@ -440,6 +440,7 @@ footer {
   .secton2divchildimg img {
     width: 90%;
   }
+  
 
   .section21stdiv {
     width: 90%;
@@ -480,7 +481,7 @@ footer {
 }
 
 .section51stdiv {
-    width: 335px;
+  width: 382px;
 }
 
 .section6 {
@@ -513,6 +514,69 @@ footer {
                 font-size: 13px;
                
                 margin: 8px 6px;
-        }        
+        }    
+        
+        
+        .section7div2 {
+          gap: 61px;}
+
+          .section7div2ul {
+          display: block;
+            margin-left: 37px;
+            
+        }
+
+        #section7div2ul {
+          /* display: flex
+  ; */
+          margin-left: 0px;
+          margin-right: 0px;
+          /* line-height: 0px; */
+          /* width: 544px; */
+          flex-direction: column;
+          text-align: center;
+      }
+
+
+      .section8div2ul {
+        /* display: flex
+    ; */
+        justify-content: flex-start;
+        margin-top: 60px;
+        margin-left: 0px;
+        gap: 0px;
+        margin-right: 0px; 
+        line-height: 33px;
+        flex-direction: column;
+       
+        text-align: center;
+    }
+
+    .footerlast2 {
+      display: flex
+  ;
+      gap: 16px;
+      font-size: smaller;
+      margin-left: 0px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+  }
+
+  .footerlast {
+    display: flex
+;
+    gap: 0px;
+    font-size: smaller;
+    margin-left: 0px; 
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.footerp {
+  padding-left: 0px;
+  line-height: 0px;
+  text-align: center;
+}
 
 }
