@@ -284,3 +284,28 @@ height: 33px;
       border-radius: 20px;
     margin: 27px 0px;
     }
+
+    .headerdivlocli {
+      width: 20%;
+    padding: 15px;
+    border: 1px solid #cfcece;
+    /* height: 43px; */
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 12px;
+    }
+
+    .headerdivlocul {
+      display: flex;
+      flex-wrap: wrap;
+          gap: 14px;
+    text-align: center;
+    }
+
+    #showmore, #showmore1 {
+    color: red;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
