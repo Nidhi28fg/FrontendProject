@@ -196,7 +196,8 @@ figcaption {
 
 .sec3img {
   width: 322px !important;
-    border-radius: 21px;
+        border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
 }
 
 .sec3ul {
@@ -211,7 +212,8 @@ figcaption {
     font-weight: 800;
     background: #00000059;
     backdrop-filter: blur(1px);
-}
+height: 33px;
+  }
 
 .sec3ul1 {
       display: flex
@@ -225,7 +227,7 @@ figcaption {
 
 .tablebooking {
   background: #e9e9e9;
-    width: 95px;
+    width: 104px;
     font-size: 13px;
     text-transform: math-auto;
     padding: 4px;
@@ -233,3 +235,52 @@ figcaption {
     color: #4e4646;
     margin-left: 10px;
 }
+
+.tablebooking svg {
+    width: 11px;
+    fill: grey;
+    margin-right: 3px;
+}
+
+.flat {
+      display: flex
+;
+    justify-content: space-between;
+        align-items: center;
+    font-size: 14px;
+    background: #1ba672;
+    padding: 9px;
+    color: white;
+    font-weight: 700;
+    border-radius: 9px;
+    margin: 10px;
+}
+
+.flatsvg svg {
+  width: 12px;
+    background: white;
+    fill: #1ba672;
+    border-radius: 70%;
+    padding: 3px;
+    margin-right: 6px;
+}
+
+.flat2 {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background: #c8f9e5;
+    padding: 9px;
+    color: #1ba672;
+    font-weight: 500;
+    border-radius: 9px;
+    margin: 10px;
+    font-family: sans-serif;}
+
+    .orderdiv2 {
+      border: 1px solid #dedede;
+      border-radius: 20px;
+    margin: 27px 0px;
+    }
