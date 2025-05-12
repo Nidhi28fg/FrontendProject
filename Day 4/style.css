@@ -285,16 +285,16 @@ height: 33px;
     margin: 27px 0px;
     }
 
-    .headerdivlocli {
-      width: 20%;
-    padding: 15px;
+ .headerdivlocli {
+    width: 20%;
+    padding: 13px;
     border: 1px solid #cfcece;
     /* height: 43px; */
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     margin-top: 12px;
-    }
+}
 
     .headerdivlocul {
       display: flex;
