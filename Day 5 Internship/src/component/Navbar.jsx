@@ -1,7 +1,7 @@
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -22,8 +22,8 @@ function Navbar() {
             <li class="text-[23px] text-gray-500">
               <IoChatboxEllipsesOutline />
             </li>
-            <li class="flex items-center text-[23px] text-gray-500">
-              <CgProfile /> <span class="text-[28px]"><MdOutlineArrowDropDown /></span>
+            <li ><Link to="/login" class="flex items-center text-[23px] text-gray-500">
+              <CgProfile /> <span class="text-[28px]"><MdOutlineArrowDropDown /></span></Link>
             </li>
           </ul>
         </div>
