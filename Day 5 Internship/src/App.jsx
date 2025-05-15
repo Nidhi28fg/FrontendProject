@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './component/Navbar'
 import Header from './component/Header'
@@ -8,6 +7,8 @@ import Certification from './component/Certification'
 import Footer from './component/Footer'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './pages/Login'
+import Testimonials from './component/Testimonial'
+import Category from './component/Category'
 
 function App() {
  
@@ -19,8 +20,10 @@ function App() {
     <Navbar/>
     < Header/>
     < Recommend/>
+    < Category />
     < Placement />
     < Certification/>
+    < Testimonials />
     < Footer />
        </> }
         />
