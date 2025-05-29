@@ -1,0 +1,184 @@
+{
+  "internship": [
+    {
+      "id": "1",
+      "title": "Web Development Intern",
+      "company": "TechCorp",
+      "location": "Remote",
+      "stipend": "₹5,000/month",
+      "duration": "3 Months",
+      "description": "Work on web development projects using React and Node.js."
+    },
+    {
+      "id": "2",
+      "title": "Data Science Intern",
+      "company": "DataInsights",
+      "location": "Bengaluru",
+      "stipend": "₹8,000/month",
+      "duration": "6 Months",
+      "description": "Assist in data analysis and machine learning model development."
+    },
+    {
+      "id": "3",
+      "title": "Graphic Design Intern",
+      "company": "CreativeMinds",
+      "location": "Mumbai",
+      "stipend": "₹4,500/month",
+      "duration": "2 Months",
+      "description": "Design marketing materials and user interfaces."
+    },
+    {
+      "id": "4",
+      "title": "Content Writing Intern",
+      "company": "ContentFlow",
+      "location": "Remote",
+      "stipend": "₹3,000/month",
+      "duration": "4 Months",
+      "description": "Create engaging content for blogs and social media."
+    },
+    {
+      "id": "5",
+      "title": "Mobile App Development Intern",
+      "company": "AppSolutions",
+      "location": "Hyderabad",
+      "stipend": "₹6,000/month",
+      "duration": "5 Months",
+      "description": "Develop and test mobile applications for Android and iOS."
+    },
+    {
+      "id": "6",
+      "title": "Digital Marketing Intern",
+      "company": "MarketGrow",
+      "location": "Delhi",
+      "stipend": "₹4,000/month",
+      "duration": "3 Months",
+      "description": "Support SEO, social media, and email marketing campaigns."
+    },
+    {
+      "id": "7",
+      "title": "UI/UX Design Intern",
+      "company": "DesignVerse",
+      "location": "Pune",
+      "stipend": "₹5,500/month",
+      "duration": "4 Months",
+      "description": "Contribute to user interface and user experience design for web and mobile apps."
+    },
+    {
+      "id": "8",
+      "title": "Software Testing Intern",
+      "company": "QualityAssure",
+      "location": "Chennai",
+      "stipend": "₹4,800/month",
+      "duration": "3 Months",
+      "description": "Perform manual and automated testing of software applications."
+    },
+    {
+      "id": "9",
+      "title": "Human Resources Intern",
+      "company": "PeopleFirst",
+      "location": "Gurugram",
+      "stipend": "₹3,500/month",
+      "duration": "6 Months",
+      "description": "Assist with recruitment, onboarding, and HR administrative tasks."
+    },
+    {
+      "id": "10",
+      "title": "Financial Analyst Intern",
+      "company": "CapitalAdvisors",
+      "location": "Bengaluru",
+      "stipend": "₹7,000/month",
+      "duration": "4 Months",
+      "description": "Support financial modeling, data analysis, and report generation."
+    },
+    {
+      "id": "11",
+      "title": "Video Editing Intern",
+      "company": "CineArts",
+      "location": "Mumbai",
+      "stipend": "₹4,000/month",
+      "duration": "2 Months",
+      "description": "Edit and produce video content for various platforms."
+    },
+    {
+      "id": "12",
+      "title": "Operations Intern",
+      "company": "StreamlineLogistics",
+      "location": "Delhi",
+      "stipend": "₹5,000/month",
+      "duration": "5 Months",
+      "description": "Assist in optimizing operational processes and logistics."
+    },
+    {
+      "id": "13",
+      "title": "Machine Learning Intern",
+      "company": "AIInnovate",
+      "location": "Hyderabad",
+      "stipend": "₹9,000/month",
+      "duration": "6 Months",
+      "description": "Work on developing and implementing machine learning algorithms."
+    },
+    {
+      "id": "14",
+      "title": "Business Development Intern",
+      "company": "GrowthPartners",
+      "location": "Pune",
+      "stipend": "₹6,500/month",
+      "duration": "3 Months",
+      "description": "Identify new business opportunities and assist with client outreach."
+    },
+    {
+      "id": "15",
+      "title": "Cloud Engineering Intern",
+      "company": "CloudScape",
+      "location": "Chennai",
+      "stipend": "₹7,500/month",
+      "duration": "6 Months",
+      "description": "Support cloud infrastructure management and deployment using AWS/Azure."
+    },
+    {
+      "id": "16",
+      "title": "Technical Support Intern",
+      "company": "HelpDeskSolutions",
+      "location": "Noida",
+      "stipend": "₹4,200/month",
+      "duration": "3 Months",
+      "description": "Provide technical assistance to users and troubleshoot software issues."
+    },
+    {
+      "id": "17",
+      "title": "Research Intern",
+      "company": "InnovateLabs",
+      "location": "Bengaluru",
+      "stipend": "₹7,000/month",
+      "duration": "4 Months",
+      "description": "Conduct research, analyze data, and contribute to project reports."
+    },
+    {
+      "id": "18",
+      "title": "Backend Development Intern",
+      "company": "CodeFlow",
+      "location": "Remote",
+      "stipend": "₹5,500/month",
+      "duration": "3 Months",
+      "description": "Develop and maintain server-side logic and databases using Python/Java."
+    },
+    {
+      "id": "19",
+      "title": "Event Management Intern",
+      "company": "EventHorizon",
+      "location": "Mumbai",
+      "stipend": "₹3,800/month",
+      "duration": "2 Months",
+      "description": "Assist in planning, organizing, and executing various events."
+    },
+    {
+      "id": "20",
+      "title": "Quality Assurance Intern",
+      "company": "VerifySoft",
+      "location": "Hyderabad",
+      "stipend": "₹4,700/month",
+      "duration": "4 Months",
+      "description": "Ensure product quality through testing and defect tracking."
+    }
+  ]
+}

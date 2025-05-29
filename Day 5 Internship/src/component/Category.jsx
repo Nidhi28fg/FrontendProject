@@ -153,6 +153,9 @@ function Category() {
         {" "}
         All Category <CgArrowRight />
       </div>
+    
+
+
     </div>
   );
 }

@@ -1,36 +1,40 @@
-import './App.css'
-import Navbar from './component/Navbar'
-import Header from './component/Header'
-import Recommend from './component/Recommend'
-import Placement from './component/Placement'
-import Certification from './component/Certification'
-import Footer from './component/Footer'
+import "./App.css";
+import Navbar from "./component/Navbar";
+import Header from "./component/Header";
+import Recommend from "./component/Recommend";
+import Placement from "./component/Placement";
+import Certification from "./component/Certification";
+import Footer from "./component/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './pages/Login'
-import Testimonials from './component/Testimonial'
-import Category from './component/Category'
+import Login from "./pages/Login";
+import Testimonials from "./component/Testimonial";
+import Category from "./component/Category";
+import Internship from "./pages/Internship";
 
 function App() {
- 
-
   return (
-     <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<>
-    <Navbar/>
-    < Header/>
-    < Recommend/>
-    < Category />
-    < Placement />
-    < Certification/>
-    < Testimonials />
-    < Footer />
-       </> }
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Header />
+              <Recommend />
+              <Category />
+              <Placement />
+              <Certification />
+              <Testimonials />
+              <Footer />
+            </>
+          }
         />
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/login" element={<Login />} />
+        <Route path="/internship" element={<Internship />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
