@@ -15,9 +15,15 @@ function Navbar() {
           />
         </div>
         <div>
-          <ul class="flex gap-[22px] items-center">
+          <ul class="flex gap-[30px] items-center">
             <li >
-              <Link class="flex items-center" to="/internship">
+              <Link class="flex items-center" to="/">
+                Home{" "}
+                <span class="text-[28px]">
+                </span>{" "}
+              </Link>
+              </li>
+<li>              <Link class="flex items-center" to="/internship">
                 Intenships{" "}
                 <span class="text-[28px]">
                   <MdOutlineArrowDropDown />
@@ -54,8 +60,10 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+        
         </div>
       </div>
+      <div class="border-b-2 border-gray-300 pt-5"></div>
     </div>
   );
 }
