@@ -33,7 +33,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/internship" element={<Internship />} />
-         <Route path="/internshipdetail" element={<InternshipDetail />} />
+         <Route path="/internshipdetail/:id" element={<InternshipDetail />} />
       </Routes>
     </BrowserRouter>
   );
