@@ -26,19 +26,16 @@ function Internship() {
   }, []);
 
   
-//  const handleFilter = (value) => {
-//   const res = filterData.filter( data => data.title.toLowerCase().includes(value) || data.company.toLowerCase().includes(value) || data.location.toLowerCase().includes(value) || data.stipend.toLowerCase().includes(value) || data.duration.toLowerCase().includes(value))
-//   setData(res);
-//  }
-
-
+ const handleFilter1 = (value) => {
+  const res = filterData.filter( data => data.title.toLowerCase().includes(value) || data.company.toLowerCase().includes(value) || data.location.toLowerCase().includes(value) || data.stipend.toLowerCase().includes(value) || data.duration.toLowerCase().includes(value))
+  setData(res);
+ }
 
  useEffect(() => {
     const timerId = setTimeout(()=> {
       if (debounc !== ""){
-         const res = filterData.filter( data => data.title.toLowerCase().includes(debounc) || data.company.toLowerCase().includes(debounc) || data.location.toLowerCase().includes(debounc) || data.stipend.toLowerCase().includes(debounc) || data.duration.toLowerCase().includes(debounc))
+         const res = filterData.filter( data => data.title.toLowerCase().includes(debounc) || data.company.toLowerCase().includes(debounc) )
         setData(res);
-        setDebounc("")
       }
     }, 1000)
      return () => {
@@ -50,37 +47,38 @@ function Internship() {
   setDebounc(e.target.value);
  }
 
+
+
+
   return (
     <div>
       <Navbar />
       <div class="border-b-2 border-gray-300 pt-5"></div>
       <div class="flex  ">
       <div class="m-8 p-8  mt-[49px]">
-      <p >Profile</p>
+      <p >Profile or Company Name</p>
       {/* <input class="border border-[#c7c6c6] bg-white h-10 w-[271px] p-2" placeholder="e.g. Web developer" type="text" onChange={e => handleFilter(e.target.value)}/>       */}
       <input class="border border-[#c7c6c6] bg-white h-10 w-[271px] p-2" placeholder="e.g. Web developer" type="text" onChange={handleFilter} value={debounc}/>      
-      <p class="mt-12" >Company</p>
-      <input class="border border-[#c7c6c6] bg-white h-10 w-[271px] p-2" placeholder="e.g. xyz company" type="text" onChange={handleFilter} value={debounc} />
       <p class="mt-12" >Location</p>
-      <input class="border border-[#c7c6c6] bg-white h-10 w-[271px] p-2" placeholder="e.g. remote" type="text" onChange={handleFilter} value={debounc} />
+      <input class="border border-[#c7c6c6] bg-white h-10 w-[271px] p-2" placeholder="e.g. remote" type="text" onChange={e => handleFilter1(e.target.value)} />
       
-      <div><input class="mt-12" type="checkbox" onChange={handleFilter} value="remote"/> <label htmlFor="remote">Remote</label> </div>
+      <div><input class="mt-12" type="checkbox" onChange={e => handleFilter1(e.target.value)} value="remote"/> <label htmlFor="remote">Remote</label> </div>
       
       <p class="mt-12" >Stipend</p>
       <div class="flex gap-2">
-      <input type="checkbox" onChange={handleFilter} value="3,000"/> <label htmlFor="3,000">3,000</label>
-      <input type="checkbox" onChange={handleFilter} value="4,000"/> <label htmlFor="4,000">4,000</label>
-      <input type="checkbox" onChange={handleFilter} value="5,000"/> <label htmlFor="5,000">5,000</label>
-      <input type="checkbox" onChange={handleFilter} value="6,000"/> <label htmlFor="6,000">6,000</label>
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="3,000"/> <label htmlFor="3,000">3,000</label>
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="4,000"/> <label htmlFor="4,000">4,000</label>
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="5,000"/> <label htmlFor="5,000">5,000</label>
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="6,000"/> <label htmlFor="6,000">6,000</label>
       </div>
 
       <p class="mt-12" >Duration</p>
       <div class="flex flex-wrap gap-1.5">
-      <input type="checkbox" onChange={e => handleFilter(e.target.value)} value="3 month"/> <label htmlFor="3 month">3 month</label>
-       <input type="checkbox" onChange={e => handleFilter(e.target.value)} value="2 month"/> <label htmlFor="2 month">2 month</label>   
-            <input type="checkbox" onChange={e => handleFilter(e.target.value)} value="4 month"/> <label htmlFor="4 month">4 month</label>
-                  <input type="checkbox" onChange={e => handleFilter(e.target.value)} value="5 month"/> <label htmlFor="5 month">5 month</label>
-      <input type="checkbox" onChange={e => handleFilter(e.target.value)} value="6 month"/> <label htmlFor="6 month">6 month</label>  
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="3 month"/> <label htmlFor="3 month">3 month</label>
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="2 month"/> <label htmlFor="2 month">2 month</label>   
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="4 month"/> <label htmlFor="4 month">4 month</label>
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="5 month"/> <label htmlFor="5 month">5 month</label>
+      <input type="checkbox" onChange={e => handleFilter1(e.target.value)} value="6 month"/> <label htmlFor="6 month">6 month</label>  
       </div>
       </div>
       

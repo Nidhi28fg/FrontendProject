@@ -16,14 +16,17 @@ function Navbar() {
         </div>
         <div>
           <ul class="flex gap-[30px] items-center">
-            <li >
+            <li>
               <Link class="flex items-center" to="/">
-                Home{" "}
-                <span class="text-[28px]">
-                </span>{" "}
+                Home <span class="text-[28px]"></span>{" "}
               </Link>
-              </li>
-<li>              <Link class="flex items-center" to="/internship">
+            </li>
+            <li class="flex items-center">
+              About Us
+            </li>
+            <li>
+              {" "}
+              <Link class="flex items-center" to="/internship">
                 Intenships{" "}
                 <span class="text-[28px]">
                   <MdOutlineArrowDropDown />
@@ -31,36 +34,27 @@ function Navbar() {
               </Link>
             </li>
             <li class="flex items-center gap-1">
-              Courses{" "}
-              <span class="bg-[#ff8c00] text-white px-2 text-sm font-semibold uppercase rounded-sm">
-                Offer
-              </span>
-              <span class="text-[28px]">
-                <MdOutlineArrowDropDown />
-              </span>
-            </li>
-            <li class="flex items-center">
-              Jobs{" "}
-              <span class="text-[28px]">
-                <MdOutlineArrowDropDown />
-              </span>
-            </li>
-            <li class="text-[23px] text-gray-500">
-              <IoChatboxEllipsesOutline />
-            </li>
-            <li>
-              <Link
-                to="/login"
-                class="flex items-center text-[23px] text-gray-500"
-              >
-                <CgProfile />{" "}
+              <Link class="flex items-center" to="/course">
+                Courses{" "}
+                <span class="bg-[#ff8c00] text-white px-1 mx-1 text-sm font-semibold uppercase rounded-sm">
+                  Offer
+                </span>
                 <span class="text-[28px]">
                   <MdOutlineArrowDropDown />
                 </span>
               </Link>
             </li>
+
+            <li>
+              <Link to="/login" class="flex items-center">
+                {" "}
+                Login/SignUp{" "}
+                <span class="flex items-center text-[23px] px-2 text-gray-500">
+                  <CgProfile />{" "}
+                </span>
+              </Link>
+            </li>
           </ul>
-        
         </div>
       </div>
       <div class="border-b-2 border-gray-300 pt-5"></div>

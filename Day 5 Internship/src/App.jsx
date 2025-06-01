@@ -11,6 +11,7 @@ import Testimonials from "./component/Testimonial";
 import Category from "./component/Category";
 import Internship from "./pages/Internship";
 import InternshipDetail from "./pages/InternshipDetail";
+import Course from "./pages/Course";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/internship" element={<Internship />} />
          <Route path="/internshipdetail/:id" element={<InternshipDetail />} />
+          <Route path="/course" element={<Course/>} />
       </Routes>
     </BrowserRouter>
   );
