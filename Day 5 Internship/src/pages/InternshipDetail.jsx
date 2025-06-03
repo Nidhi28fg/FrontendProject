@@ -9,14 +9,14 @@ import axios from "axios";
 import Navbar from "../component/Navbar";
 
 function InternshipDetail() {
-  const { id } = useParams();
+  const { id } = useParams(); // Get the 'id' parameter from the URL
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:3031/internship/${id}`)
+      .get(`http://localhost:3031/internship/${id}`) // Use the 'id' to fetch data for specific internship
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
-  }, [id]);
+  }, [id]); // Re-run effect if 'id' changes
 
   return (
     <div>
