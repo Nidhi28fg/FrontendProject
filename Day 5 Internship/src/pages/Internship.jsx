@@ -31,6 +31,9 @@ function Internship() {
     }));
   };
 
+
+  //&& and logic both true
+  // || or logic true one logic
   const filtereddatas = data.filter((data) => {
     return (
       (filters.location === "" || data.location === filters.location) &&
