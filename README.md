@@ -23,5 +23,6 @@ To help React identify items and optimise rendering performance.
 </li>
 <li>A variable declared with `let` can be reassigned, while `const` cannot.`const` creates a read-only reference to a value, promoting immutability.</li>
 <li> purpose of the `useEffect` hook is to perform side effects in functional components like data fetching, subscriptions, or manually changing the DOM </li>
+<li>In a controlled component, form data is handled by a React component. The alternative is uncontrolled components, where form data is handled by the DOM itself.</li>
   
 </ul>
