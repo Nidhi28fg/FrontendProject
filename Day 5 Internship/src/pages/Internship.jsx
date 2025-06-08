@@ -41,18 +41,16 @@ function Internship() {
       (filters.duration === "" || data.duration === filters.duration)
     );
   });
-
-  //useEffect allows components to perform side effects (actions outside of rendering) after rendering or when specific dependencies (state or props values) change. It's crucial for tasks like data fetching, interacting with browser APIs, or setting up subscriptions/timers. The dependency array controls when the effect runs, and an optional cleanup function helps prevent memory leaks.
-//Use useEffect to fetch data when the component mounts
   useEffect(() => {
-    axios   //Axios is a library that helps us make HTTP requests (like GET, POST, PUT, DELETE) from our web browser or from a Node.js server. 
-      .get("http://localhost:3031/internship/") //A GET request is used to retrieve data from a server. 
-      .then((res) => { // What to do if the request is successful
+    axios
+      .get("http://localhost:3031/internship/")
+    
+      .then((res) => {
         setData(res.data);
         setFilterData(res.data);
       })
       .catch((err) => console.log(err)); // What to do if the request is ussuccessful
-  }, []);// array is empty ([]), the effect will only run once after the initial render of the component. This is useful for things like fetching data when the component first loads.
+  }, []);
 
   useEffect(() => {
     const timerId = setTimeout(() => {  // This code runs AFTER a 1-second delay (debounce)
@@ -71,9 +69,9 @@ function Internship() {
     return () => {
       clearInterval(timerId); 
     };
-  }, [debounc, filters]); //Dependency Array: Run effect when searchText and filter changes
+  }, [debounc, filters]);
 
-  const handleFilter = (e) => {  //handleFilter calls setDebounc with the new input value. then 
+  const handleFilter = (e) => {  
     setDebounc(e.target.value);
   };
 
