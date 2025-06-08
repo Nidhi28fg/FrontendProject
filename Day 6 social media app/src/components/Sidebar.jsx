@@ -12,7 +12,7 @@ function Sidebar({selectedTab, setSelectedTab}) {
       <a href="#" className="flex items-center mb-3 md:mb-0 mr-auto text-white no-underline">
         {/* You can replace this with an actual SVG icon or a component */}
         {/* <svg className="bi pe-none mr-2 w-10 h-8" aria-hidden="true"><use xlinkHref="#bootstrap"></use></svg> */}
-        <span className="text-4xl">Sidebar</span>
+        <span className="text-4xl text-center">Socail Media Posts</span>
       </a>
       <hr className="my-3 border-gray-700" />
       <ul className="flex-col">

@@ -5,11 +5,14 @@ import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import Form from "./components/Form";
 import PostList from "./components/PostList";
+import PostListProvider from "./store/post-list-store";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
 
   return (
+
+    <PostListProvider>
     <div className="flex h-screen">
       <div className="h-screen">
         {" "}
@@ -22,6 +25,7 @@ function App() {
         <Footer />
       </div>
     </div>
+    </PostListProvider>
   );
 }
 
