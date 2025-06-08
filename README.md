@@ -28,5 +28,7 @@ To help React identify items and optimise rendering performance.
 <li>effect of passing an empty dependency array `[]` to the `useEffect` hook - An empty dependency array tells React that the effect doesn't depend on any values from props or state, so it runs only once upon mounting.</li>
 <li> React Context API primarily helps solve - Avoiding 'prop drilling' by making data available to deeply nested components.</li>
 <li>`useCallback` returns a memoised version of the callback function, which prevents unnecessary re-renders of child components that rely on referential equality for props.</li>
+  <li>React memo - यह component के रेंडर आउटपुट को मेमोइज़ कर देता है और केवल तभी rerender करता है जब उसके props में थोड़ा बहुत परिवर्तन हुआ हो। </li>
+  <li>`useRef` provides a way to access DOM nodes or to store any mutable value that doesn't need to trigger a component re-render when it changes.</li>
   
 </ul>
