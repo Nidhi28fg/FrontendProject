@@ -14,15 +14,14 @@ To allow writing HTML-like syntax directly within JavaScript code.
   </li>
   <li>
     Key-
-To help React identify items and optimize rendering performance.
-Keys give elements a stable identity, allowing React to update the UI when the list changes efficiently.
+To help React identify items and optimise rendering performance. 
+    Keys give elements a stable identity, allowing React to update the UI when the list changes efficiently.
   </li>
 <li>
   
- Virtual DOM's a lightweight in-memory representation of the DOM used to improve performance.
-
-React updates the Virtual DOM first, then calculates the most efficient way to update the real DOM, minimising costly direct manipulations.
+ Virtual DOM is a lightweight in-memory representation of the DOM used to improve performance. React updates the Virtual DOM first, then calculates the most efficient way to update the real DOM, minimising costly direct manipulations.
 </li>
+<li>A variable declared with `let` can be reassigned, while `const` cannot.`const` creates a read-only reference to a value, promoting immutability.</li>
 
   
 </ul>
