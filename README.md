@@ -15,7 +15,14 @@ To allow writing HTML-like syntax directly within JavaScript code.
   <li>
     Key-
 To help React identify items and optimize rendering performance.
-Right answer
-Keys give elements a stable identity, allowing React to efficiently update the UI when the list changes.
+Keys give elements a stable identity, allowing React to update the UI when the list changes efficiently.
   </li>
+<li>
+  
+ Virtual DOM's a lightweight in-memory representation of the DOM used to improve performance.
+
+React updates the Virtual DOM first, then calculates the most efficient way to update the real DOM, minimising costly direct manipulations.
+</li>
+
+  
 </ul>
