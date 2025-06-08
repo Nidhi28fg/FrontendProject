@@ -7,7 +7,7 @@
   </li>
   <li>
     JSX -
-To allow writing HTML-like syntax directly within JavaScript code.
+Allow for the writing of HTML-like syntax directly within JavaScript code.
   </li>
   <li>
     UseState provides the state variable and the setter function in an array.
@@ -22,6 +22,6 @@ To help React identify items and optimise rendering performance.
  Virtual DOM is a lightweight in-memory representation of the DOM used to improve performance. React updates the Virtual DOM first, then calculates the most efficient way to update the real DOM, minimising costly direct manipulations.
 </li>
 <li>A variable declared with `let` can be reassigned, while `const` cannot.`const` creates a read-only reference to a value, promoting immutability.</li>
-
+<li> purpose of the `useEffect` hook is to perform side effects in functional components like data fetching, subscriptions, or manually changing the DOM </li>
   
 </ul>
