@@ -1,10 +1,13 @@
-import { RecoilRoot } from "recoil";
+import Singuppage from "./pages/Singuppage";
+
+
+
 
 function App() {
 
   return (
    <>
-   Nidhi Singh Bhadoria
+   <Singuppage/>
    </>
   );
 };

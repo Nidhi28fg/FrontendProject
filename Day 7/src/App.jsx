@@ -1,10 +1,13 @@
-import { RecoilRoot } from "recoil";
+import Atom from "./component/Atom";
+
+
+
 
 function App() {
 
   return (
    <>
-   Nidhi Singh Bhadoria
+<Atom/>
    </>
   );
 };
