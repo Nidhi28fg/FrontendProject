@@ -1,5 +1,4 @@
-import "./App.css";
-
+import { RecoilRoot } from "recoil";
 
 function App() {
 
@@ -8,6 +7,6 @@ function App() {
    Nidhi Singh Bhadoria
    </>
   );
-}
+};
 
 export default App;
