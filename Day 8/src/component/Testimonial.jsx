@@ -12,9 +12,10 @@ function Testimonial() {
           <div className="mb-4 flex items-center"></div>
           <Blockquote>
             <p className="text-lg font-medium text-gray-400 dark:text-white">
-              "Flowbite is just awesome. It contains tons of predesigned
-              components and pages starting from login screen to complex
-              dashboard. Perfect choice for your next SaaS application."
+             “Complete account of the system and
+expound the actual Contrary to popular
+belief, Lorem Ipsum is not simply 
+random text. It has roots”
             </p>
           </Blockquote>
           <figcaption className="mt-6 flex justify-between items-center space-x-6">
@@ -40,9 +41,10 @@ function Testimonial() {
           <div className="mb-4 flex items-center"></div>
           <Blockquote>
             <p className="text-lg font-medium text-gray-400 dark:text-white">
-              "Flowbite is just awesome. It contains tons of predesigned
-              components and pages starting from login screen to complex
-              dashboard. Perfect choice for your next SaaS application."
+              “Teachings of the great explore of truth, 
+the master-builder of human happiness. 
+no one rejects,dislikes, or avoids pleasure 
+itself, pleasure itself”
             </p>
           </Blockquote>
           <figcaption className="mt-6 flex justify-between items-center space-x-6">
@@ -68,9 +70,10 @@ function Testimonial() {
           <div className="mb-4 flex items-center"></div>
           <Blockquote>
             <p className="text-lg font-medium text-gray-400 dark:text-white">
-              "Flowbite is just awesome. It contains tons of predesigned
-              components and pages starting from login screen to complex
-              dashboard. Perfect choice for your next SaaS application."
+              “There are many variations of passages
+ of Lorem Ipsum available, but the majority
+ have suffered alteration in some form,
+ by injected humour”
             </p>
           </Blockquote>
           <figcaption className="mt-6 flex justify-between items-center space-x-6">
