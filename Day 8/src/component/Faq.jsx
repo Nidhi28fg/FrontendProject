@@ -40,8 +40,7 @@ function Faq() {
       <h2 className="text-[59px] font-semibold text-[#1d1616] max-md:text-[28px] max-md:text-center ">
         Frequently asked Questions
       </h2>
-    <div className="flex flex-wrap items-center h-[600px] flex-col gap-x-[47px] pt-16 max-md:pt-0 max-md:h-full">
-{/* <div className="grid grid-cols-5 grid-rows-5 gap-4"> */}
+    <div className="flex flex-wrap p-4 max-md:p-0 max-md:h-full">
       {faqdata.map((faq, index) => {
         return (
           <FaqQue faq={faq} index={index}/>
