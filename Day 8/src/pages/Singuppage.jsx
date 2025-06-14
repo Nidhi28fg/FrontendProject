@@ -38,7 +38,15 @@ function Singuppage() {
       ...formInput,
       [name]: value,
     });
+
+    setFormError({
+      ...formError,
+      [name]: "",
+    });
   };
+
+
+  // Validation Logic
 
   const validateFormInput = (event) => {
     event.preventDefault();
@@ -57,30 +65,45 @@ function Singuppage() {
       yearofstudy: "",
     };
 
-    if (formInput.createpassword !== formInput.confirmpassword) {
-      setFormError({
-        ...inputError,
-        confirmpassword: "Password should be same",
-      }); 
-      return;
-    }
-
     if (!formInput.username) {
-      setFormError({
-        ...inputError,
-        username: "please enter username",
-      });
-      return;
+      inputError.username = "please enter Username";
     }
 
     if (!formInput.fullname) {
-      setFormError({
-        ...inputError,
-        fullname: "please enter username",
-      });
-      return;
+      inputError.fullname = "please enter Fullname";
+    }
+    if (!formInput.phonenumber) {
+      inputError.phonenumber = "please enter Your Phone Number";
+    }
+    if (!formInput.email) {
+      inputError.email = "please enter your Email";
+    }
+    if (!formInput.createpassword) {
+      inputError.createpassword = "please enter Password";
     }
 
+    if (!formInput.confirmpassword) {
+      inputError.confirmpassword = "please enter Confirm Password";
+    }
+    if (formInput.createpassword.trim() !== formInput.confirmpassword.trim()) {
+      inputError.confirmpassword =
+        "Create Password and Confirm Password should be same";
+    }
+    if (!formInput.gender) {
+      inputError.gender = "please choose your gender";
+    }
+    if (!formInput.collegename) {
+      inputError.collegename = "please enter your College Name";
+    }
+    if (!formInput.department) {
+      inputError.department = "please enter your department";
+    }
+    if (!formInput.collegeaddress) {
+      inputError.collegeaddress = "please enter College Address";
+    }
+    if (!formInput.yearofstudy) {
+      inputError.yearofstudy = "please enter Your Year of Study";
+    }
     setFormError(inputError);
   };
 
@@ -106,12 +129,11 @@ function Singuppage() {
                   placeholder="Your username"
                   type="text"
                   name="username"
-                  value={formInput.username} required         />
-                {formError.username && (
-                  <span className="text-red-600 text-sm">
-                    {formError.username}
-                  </span>
-                )}
+                  value={formInput.username}
+                />
+                <span className="text-red-600 text-sm">
+                  {formError.username}
+                </span>
               </label>
               <label class="flex flex-col gap-2 text-[22px] font-medium text-[#d9d9d9] max-md:text-base mt-3 mb-6 max-sm:mt-1.5 max-sm:mb-4.5">
                 Email
@@ -161,9 +183,11 @@ function Singuppage() {
                   name="fullname"
                   placeholder="Your Full Name"
                 />
-                <span className="text-red-600 text-sm">
-                  {formError.fullname}
-                </span>
+                {formError && (
+                  <span className="text-red-600 text-sm">
+                    {formError.fullname}
+                  </span>
+                )}
               </label>{" "}
               <label class="flex flex-col gap-2 text-[22px] font-medium text-[#d9d9d9] max-md:text-base mt-3 mb-6 max-sm:mt-1.5 max-sm:mb-4.5">
                 Create Password
@@ -193,8 +217,10 @@ function Singuppage() {
                   name="confirmpassword"
                   placeholder="***************"
                 />
+                <span className="text-red-600 text-base">
+                  {formError.confirmpassword}
+                </span>
               </label>
-              <span className="text-red-600">{formError.confirmpassword}</span>
             </div>
           </div>
 
@@ -208,6 +234,11 @@ function Singuppage() {
                 class="mx-4 appearance-none w-5 h-5 border-4 border-white rounded-full outline-none bg-white cursor-pointer checked:bg-[#41bdc5]"
                 type="radio"
                 name="gender"
+                value="male"
+                checked={formInput.gender === "male"}
+                onChange={({ target }) =>
+                  handleUserInput(target.name, target.value)
+                }
               />
             </label>
             <label class="flex items-center text-[20px] font-medium text-[#d9d9d9] max-md:text-base mt-3 mb-6 max-sm:mt-1.5 max-sm:mb-4.5">
@@ -215,10 +246,16 @@ function Singuppage() {
               <input
                 type="radio"
                 name="gender"
+                value="female"
                 class="mx-4 appearance-none w-5 h-5 border-4 border-white rounded-full outline-none bg-white cursor-pointer checked:bg-[#41bdc5]"
+                checked={formInput.gender === "female"}
+                onChange={({ target }) =>
+                  handleUserInput(target.name, target.value)
+                }
               />
             </label>
           </div>
+          <span className="text-red-600 text-sm">{formError.gender}</span>
           <div class="flex gap-[282px] mt-[45px] max-md:gap-2 max-md:mt-4 max-md:flex-col">
             <div>
               <label class="flex flex-col gap-2 text-[22px] font-medium text-[#d9d9d9] max-md:text-base mt-3 mb-6 max-sm:mt-1.5 max-sm:mb-4.5">
@@ -233,6 +270,9 @@ function Singuppage() {
                   name="collegename"
                   placeholder="Your College Number"
                 />
+                <span className="text-red-600 text-sm">
+                  {formError.collegename}
+                </span>
               </label>
               <label class="flex flex-col gap-2 text-[22px] font-medium text-[#d9d9d9] max-md:text-base mt-3 mb-6 max-sm:mt-1.5 max-sm:mb-4.5">
                 Department
@@ -240,6 +280,10 @@ function Singuppage() {
                   <select
                     name="department"
                     id="year"
+                     value={formInput.department}
+                    onChange={({ target }) => {
+                      handleUserInput(target.name, target.value);
+                    }} 
                     class="appearance-none flex items-center gap-[90px] max-sm:gap-[60px] border-2 border-white p-4 text-base rounded-4xl w-72 max-sm:w-65"
                   >
                     <option value="">Choose your Department</option>
@@ -249,6 +293,9 @@ function Singuppage() {
                     size={25}
                     class="absolute right-[21px] top-[19px]"
                   />
+                  <span className="text-red-600 text-sm">
+                    {formError.department}
+                  </span>
                 </div>
               </label>
             </div>
@@ -265,6 +312,9 @@ function Singuppage() {
                   name="collegeaddress"
                   placeholder="Your College Address"
                 />
+                <span className="text-red-600 text-sm">
+                  {formError.collegename}
+                </span>
               </label>
 
               <label class="flex flex-col gap-2 text-[22px] font-medium text-[#d9d9d9] max-md:text-base mt-3 mb-6 max-sm:mt-1.5 max-sm:mb-4.5">
@@ -273,6 +323,10 @@ function Singuppage() {
                   <select
                     name="yearofstudy"
                     id="year"
+                     value={formInput.yearofstudy}
+                    onChange={({ target }) => {
+                      handleUserInput(target.name, target.value);
+                    }} 
                     class="appearance-none flex items-center gap-[90px] max-sm:gap-[60px] border-2 border-white p-4 text-base rounded-4xl w-72 max-sm:w-65"
                   >
                     <option value="">Enter Current Year </option>
@@ -284,6 +338,9 @@ function Singuppage() {
                     size={25}
                     class="absolute right-[21px] top-[19px]"
                   />
+                  <span className="text-red-600 text-sm">
+                    {formError.yearofstudy}
+                  </span>
                 </div>
               </label>
             </div>
