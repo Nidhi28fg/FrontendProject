@@ -11,6 +11,7 @@
     "postinstall": "flowbite-react patch"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@tailwindcss/vite": "^4.1.8",
     "flowbite-react": "^0.11.8",
     "react": "^19.1.0",
