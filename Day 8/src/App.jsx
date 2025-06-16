@@ -12,7 +12,6 @@ function App() {
   return (
    <>
    <Singuppage/>
-   <Testimonial/>
    <NewTestimonial/>
    <Faq/>
 

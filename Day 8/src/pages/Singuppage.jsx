@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { MdOutlineArrowDropDownCircle } from "react-icons/md";
 
 function Singuppage() {
+  const [pass, setPass] = useState(true);
   const [formInput, setFormInput] = useState({
     username: "",
     email: "",
@@ -44,6 +45,10 @@ function Singuppage() {
       [name]: "",
     });
   };
+
+  const myPassword = () => {
+    setPass(!pass);
+  }
 
 
   // Validation Logic
@@ -197,10 +202,10 @@ function Singuppage() {
                     handleUserInput(target.name, target.value);
                   }}
                   class="border-2 border-white p-4 text-base rounded-4xl w-[410px]   max-sm:w-65"
-                  type="password"
+                  type= {pass ? "password" :  "text" }
                   name="createpassword"
                   placeholder="***************"
-                />
+                /> 
                 <span className="text-red-600 text-sm">
                   {formError.createpassword}
                 </span>
@@ -213,14 +218,16 @@ function Singuppage() {
                     handleUserInput(target.name, target.value);
                   }}
                   class="border-2 border-white p-4 text-base rounded-4xl w-[410px]   max-sm:w-65"
-                  type="password"
+                  type={pass ? "password" :  "text" }
                   name="confirmpassword"
                   placeholder="***************"
                 />
                 <span className="text-red-600 text-base">
                   {formError.confirmpassword}
                 </span>
+                 <span><input className="w-4 h-4" type="checkbox" onClick={myPassword}/> Show Password</span>
               </label>
+             
             </div>
           </div>
 
