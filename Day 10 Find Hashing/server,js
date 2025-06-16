@@ -1,0 +1,23 @@
+const crypto = require('crypto');
+
+//function to find an input string that produces a hash start
+function findHashwithPrefix(prefix) {
+    let input = 0;
+    while (true) {
+        let inputStr = input.toString();
+        // let inputStr = "100dev" + input.toString();
+        
+        let hash = crypto.createHash('sha256').update(inputStr);
+        if (hash.startsWith(prefix)) {
+            return {
+                input: inputStr, hash: hash };
+            }
+            input++;
+        }
+    }
+
+
+// find and print the input string an hash
+const result = findHashwithPrefix('00000');
+console.log(`Input: ${result.input}`);
+console.log(`Hash: ${result.hash}`);
