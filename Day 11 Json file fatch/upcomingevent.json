@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "img": "",
+    "img": "/src/assets/health.png",
     "type": "Education Workshop",
     "date": "July 28, 2025",
     "time": "2:00 PM-5:00 PM",
@@ -10,6 +10,7 @@
   },
   {
     "id": "2",
+     "img": "/src/assets/health2.png",
     "type": "Medical Assistance Camp",
     "date": "June 28, 2025",
     "time": "2:00 PM-5:00 PM",
@@ -18,6 +19,7 @@
   },
   {
     "id": "3",
+     "img": "/src/assets/health3.png",
     "type": "Education Workshop",
     "date": "July 15, 2025",
     "time": "2:00 PM-5:00 PM",
@@ -26,6 +28,7 @@
   },
   {
     "id": "4",
+     "img": "/src/assets/health4.png",
     "type": "Tree Plantation Drive",
     "date": "July 15, 2025",
     "time": "2:00 PM-5:00 PM",
