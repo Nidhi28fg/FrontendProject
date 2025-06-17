@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "img": "",
+    "type": "Education Workshop",
+    "date": "July 28, 2025",
+    "time": "2:00 PM-5:00 PM",
+    "location": "Online Event",
+    "button_text": "Join Webinar"
+  },
+  {
+    "id": "2",
+    "type": "Medical Assistance Camp",
+    "date": "June 28, 2025",
+    "time": "2:00 PM-5:00 PM",
+    "location": "Online Event",
+    "button_text": "Learn More"
+  },
+  {
+    "id": "3",
+    "type": "Education Workshop",
+    "date": "July 15, 2025",
+    "time": "2:00 PM-5:00 PM",
+    "location": "Online Event",
+    "button_text": "Register Now"
+  },
+  {
+    "id": "4",
+    "type": "Tree Plantation Drive",
+    "date": "July 15, 2025",
+    "time": "2:00 PM-5:00 PM",
+    "location": "Online Event",
+    "button_text": "Register Now"
+  }
+]
