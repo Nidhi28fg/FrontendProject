@@ -8,8 +8,7 @@ function Upcoming() {
     daterange: "",
   });
 
-  // const [data, setData] = useState(Data);
-  const [sortCallback, setSortCallback] = useState(() => () => {});
+  const [data, setData] = useState(Data);
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
@@ -22,38 +21,16 @@ function Upcoming() {
     }));
   };
 
-  const handlesortFilterChange = (e) => {
-    const sort = e.target.value;
-    if (sort === "EventName") {
-      setSortCallback(() => (a, b) => {
-        if (a.type < b.type) {
-          return -1;
-        }
-        if (a.type > b.type) {
-          return 1;
-        }
-        return 0;
+  const dateShort = () => {
+    const shortdate = filtereddatas.sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateA - dateB; 
       });
-    }
-
-    if (sort === "Latestfirst") {
-      setSortCallback(() => (a, b) => new Date(a.date) - new Date(b.date));
-    }
-
-    if (sort === "Location") {
-         setSortCallback(() => (a, b) => {
-        if (a.location < b.location) {
-          return -1;
-        }
-        if (a.location > b.location) {
-          return 1;
-        }
-        return 0;
-      });
-    }
+    setData(shortdate);
   };
 
-  const filtereddatas = Data.filter((eventupcoming) => {
+  const filtereddatas = data.filter((eventupcoming) => {
     const eventDate = new Date(eventupcoming.date);
     const filterDate = new Date(filters.daterange);
     // console.log(eventDate);
@@ -82,7 +59,7 @@ function Upcoming() {
       <div className="flex justify-center max-sm:flex-col">
         <div className="flex flex-wrap justify-center w-[860px] max-sm:w-full">
           <ul className="flex flex-wrap justify-center">
-            {filtereddatas.sort(sortCallback).map((eventupcoming) => {
+            {filtereddatas.map((eventupcoming) => {
               return (
                 <li
                   key={eventupcoming.id}
@@ -183,19 +160,13 @@ function Upcoming() {
           <div>
             {" "}
             <p>Sort By :</p>
-            <button
-              onClick={() => {
-                setSortCallback(
-                  () => (a, b) => new Date(a.date) - new Date(b.date)
-                );
-              }}
-            >
-              jdhfjhdf
-            </button>
-            <select onChange={handlesortFilterChange}>
+            <select
+            onChange={dateShort} >
               <option value="">Date (Earliest First) </option>
-              <option value="Latestfirst">Date (Latest First)</option>
-              <option value="EventName">Event Name A_Z</option>
+              <option value="sortbydate" >
+                Date (Latest First)
+              </option>
+              <option value="sortbyname">Event Name A_Z</option>
               <option value="Location">Location</option>
             </select>
           </div>
