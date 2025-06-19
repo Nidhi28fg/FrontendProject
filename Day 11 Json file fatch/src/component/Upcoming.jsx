@@ -8,7 +8,6 @@ function Upcoming() {
     daterange: "",
   });
 
-  // const [data, setData] = useState(Data);
   const [sortCallback, setSortCallback] = useState(() => () => {});
 
   const handleFilterChange = (e) => {
@@ -41,7 +40,7 @@ function Upcoming() {
     }
 
     if (sort === "Location") {
-         setSortCallback(() => (a, b) => {
+      setSortCallback(() => (a, b) => {
         if (a.location < b.location) {
           return -1;
         }
@@ -51,6 +50,19 @@ function Upcoming() {
         return 0;
       });
     }
+    if (sort === "") {
+      setSortCallback();
+    }
+  };
+
+  const resetAll = () => {
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      location: "",
+      eventtype: "",
+      daterange: "",
+    }));
+    setSortCallback();
   };
 
   const filtereddatas = Data.filter((eventupcoming) => {
@@ -112,7 +124,7 @@ function Upcoming() {
             <p className="font-semibold mb-[27px]">Filter & Sort Events</p>
             <div className="flex flex-wrap justify-center gap-5 max-sm:gap-1">
               <button
-                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px]"
+                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px] hover:bg-[#3066be]"
                 name="eventtype"
                 value="Medical Assistance Camp"
                 onClick={handleFilterChange}
@@ -120,7 +132,7 @@ function Upcoming() {
                 Health
               </button>
               <button
-                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px]"
+                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px] hover:bg-[#3066be]"
                 name="eventtype"
                 value="Education Workshop"
                 onClick={handleFilterChange}
@@ -128,7 +140,7 @@ function Upcoming() {
                 Education
               </button>
               <button
-                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px]"
+                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px] hover:bg-[#3066be]"
                 name="eventtype"
                 value="Tree Plantation Drive"
                 onClick={handleFilterChange}
@@ -136,7 +148,7 @@ function Upcoming() {
                 Environmental
               </button>
               <button
-                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px]"
+                className="bg-[#1d1d52] text-[white] p-1 px-5 rounded-[7px] hover:bg-[#3066be]"
                 name="eventtype"
                 value="Animal"
                 onClick={handleFilterChange}
@@ -180,19 +192,25 @@ function Upcoming() {
               onChange={handleFilterChange}
             />
           </div>
-          <div>
-            {" "}
-            <p>Sort By :</p>
-            <button
-              onClick={() => {
-                setSortCallback(
-                  () => (a, b) => new Date(a.date) - new Date(b.date)
-                );
-              }}
+          <div className="flex gap-4">
+            <div className="flex justify-center items-center w-[60px] h-[70px] bg-[#0d2561] my-[40px]">
+              <div className="bg-white w-[40px] h-[40px] rounded-lg"></div>
+            </div>
+
+            <div
+              className="flex justify-center items-center w-[60px] h-[70px] bg-white border-1 border-[#bababa] my-[40px]"
+              onClick={resetAll}
             >
-              jdhfjhdf
-            </button>
-            <select onChange={handlesortFilterChange}>
+              <div className="bg-[#0d2561] w-[43px] h-[40px] rounded-lg"></div>
+            </div>
+          </div>
+          <div className="flex gap-3 items-center">
+            {" "}
+            <p className="text-[23px] max-sm:text-[15px]">Sort by :</p>
+            <select
+              className="border-1 p-3 border-gray-300"
+              onChange={handlesortFilterChange}
+            >
               <option value="">Date (Earliest First) </option>
               <option value="Latestfirst">Date (Latest First)</option>
               <option value="EventName">Event Name A_Z</option>
