@@ -68,8 +68,6 @@ function Upcoming() {
   const filtereddatas = Data.filter((eventupcoming) => {
     const eventDate = new Date(eventupcoming.date);
     const filterDate = new Date(filters.daterange);
-    // console.log(eventDate);
-    // console.log(filterDate);
     return (
       (filters.location === "" ||
         eventupcoming.location === filters.location) &&
