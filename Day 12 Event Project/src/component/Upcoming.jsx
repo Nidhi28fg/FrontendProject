@@ -89,8 +89,8 @@ function Upcoming() {
         Join us for these exciting opportunities to make a difference in your
         community.
       </p>
-      <div className="flex justify-center max-sm:flex-col">
-        <div className="flex flex-wrap justify-center w-[860px] max-sm:w-full">
+      <div className="flex max-sm:flex-col max-lg:flex-col max-sm:w-[410px] xl:justify-center lg:w-full ">
+          <div className="flex flex-wrap justify-center lg:w-[860px] sm:w-[385px] ">
           <ul className="flex flex-wrap justify-center">
             {filtereddatas.sort(sortCallback).map((eventupcoming) => {
               return (
