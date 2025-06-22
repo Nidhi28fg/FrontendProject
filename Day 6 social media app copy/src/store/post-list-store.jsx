@@ -13,6 +13,8 @@ const postListReducer = (currPostList, action) => {
     newPostList = currPostList.filter(
       (post) => post.id !== action.payload.postId
     );
+  } else if ( action.type === "ADD_POST"){
+    newPostList = [action.payload, ...currPostList];
   }
   return newPostList;
 };
@@ -23,7 +25,21 @@ const PostListProvider = ({ children }) => {
     DEFAULT_POST_LIST
   );
 
-  const addPost = () => {};
+  const addPost = (userId1, postTitle1, postBody1, reactions1, tags1) => {
+    console.log(`${userId1}`);
+     dispatchPostList({
+      type: "ADD_POST",
+      payload: {
+         id: Date.now(),
+    title: postTitle1,
+    body: postBody1,
+    reactions: reactions1,
+    userId: userId1,
+    tags: tags1,
+      },
+    });
+
+  };
 
   const deletePost = (postId) => {
     //action anounce function sometime happen as a action

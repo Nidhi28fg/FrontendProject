@@ -8,7 +8,7 @@ function Sidebar({selectedTab, setSelectedTab}) {
     }
 
   return (
-    <div className="flex flex-col flex-shrink-0 p-4 text-white bg-gray-800 h-3/4" style={{ width: '280px' }}>
+    <div className="flex flex-col flex-shrink-0 p-4 text-white bg-gray-800 h-[838px]" style={{ width: '280px' }}>
       <a href="#" className="flex items-center mb-3 md:mb-0 mr-auto text-white no-underline">
         {/* You can replace this with an actual SVG icon or a component */}
         {/* <svg className="bi pe-none mr-2 w-10 h-8" aria-hidden="true"><use xlinkHref="#bootstrap"></use></svg> */}

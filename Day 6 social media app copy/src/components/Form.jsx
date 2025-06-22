@@ -1,6 +1,8 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
+import { PostList } from "../store/post-list-store";
 
 function Form() {
+  const {addPost} = useContext(PostList);
   const userId = useRef();
   const postTitle = useRef();
   const postBody = useRef();
@@ -13,7 +15,16 @@ const handleSubmit = (event) =>{
   const postTitle1 = postTitle.current.value;
   const postBody1 = postBody.current.value;
   const reactions1 = reactions.current.value;
-  const tags1 = tags.current.value.split(/(\s+)/);
+  // const tags1 = tags.current.value.split(/(\s+)/);
+  const tags1 = tags.current.value.split(" ");
+
+  userId.current.value= "";
+  postTitle.current.value= "";
+  postBody.current.value= "";
+  reactions.current.value= "";
+  tags.current.value= "";
+
+  addPost ( userId1, postTitle1, postBody1, reactions1, tags1);
 
 }
 

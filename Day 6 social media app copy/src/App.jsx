@@ -14,7 +14,7 @@ function App() {
 
     <PostListProvider>
     <div className="flex h-screen">
-      <div className="h-screen">
+      <div>
         {" "}
         <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} /> 
         {/* pops */}
