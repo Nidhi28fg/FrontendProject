@@ -1,21 +1,21 @@
 import { atom} from "recoil";
 
 export const myNetworkAtom = atom({
-        key: "myNetworkAtom",
+        key: "myNetworkkAtom",
         default: 102,
 });
 
 export const jobsAtom = atom({
-        key: "jobsAtom",
+        key: "jobssAtom",
         default: 0,
 });
 
 export const messagingAtom = atom({
-    key: "messagingAtom",
+    key: "messaginggAtom",
     default: 12,
 });
 
 export const notificationAtom = atom({
-    key: "notificationAtom",
+    key: "notificationnAtom",
     default: 0,
 });
