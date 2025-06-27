@@ -36,10 +36,18 @@ function Increase() {
   function increase() {
     setCount((c) => c + 1);
   }
+
+  function increaseBy5() {
+    setCount((c) => c + 5);
+  }
   return (
+
+
     <>
       <button onClick={increase}>Increase Count</button>
+      <button onClick={increaseBy5}>Increase by 5</button>
     </>
+    
   );
 }
 
