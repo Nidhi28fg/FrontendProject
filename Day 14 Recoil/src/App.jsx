@@ -3,6 +3,7 @@ import Atom from './component/Atom';
 import Selector from './component/Selector';
 import DeepdiveRecoil from './component/DeepdiveRecoil';
 import AsyncDataQueries from './component/AsyncDataQueries';
+import AtomFamily from './component/AtomFamily';
 const App = () => {
   return (
     <div>
@@ -16,7 +17,10 @@ const App = () => {
       <DeepdiveRecoil/>
       <h1>AsyncDataQueries</h1>
       <AsyncDataQueries/>
+      <h1>AtomFamily</h1>
+      <AtomFamily/>
     </div>
+
   );
 };
 
