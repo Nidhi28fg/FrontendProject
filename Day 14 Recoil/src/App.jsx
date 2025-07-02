@@ -4,6 +4,8 @@ import Selector from './component/Selector';
 import DeepdiveRecoil from './component/DeepdiveRecoil';
 import AsyncDataQueries from './component/AsyncDataQueries';
 import AtomFamily from './component/AtomFamily';
+import SelectorFamily from './component/SelectorFamily';
+import Otp from './component/Otp';
 const App = () => {
   return (
     <div>
@@ -19,6 +21,10 @@ const App = () => {
       <AsyncDataQueries/>
       <h1>AtomFamily</h1>
       <AtomFamily/>
+      <h1>SelectorFamily</h1>
+      <SelectorFamily/>
+      <h1>Otp</h1>
+      <Otp/>
     </div>
 
   );
