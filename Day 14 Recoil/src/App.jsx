@@ -6,6 +6,7 @@ import AsyncDataQueries from './component/AsyncDataQueries';
 import AtomFamily from './component/AtomFamily';
 import SelectorFamily from './component/SelectorFamily';
 import Otp from './component/Otp';
+import Sidebar from './component/Sidebar';
 const App = () => {
   return (
     <div>
@@ -24,7 +25,9 @@ const App = () => {
       <h1>SelectorFamily</h1>
       <SelectorFamily/>
       <h1>Otp</h1>
-      <Otp/>
+      <Otp number={6}/>
+
+      <Sidebar className="bg-green-500"/>
     </div>
 
   );
