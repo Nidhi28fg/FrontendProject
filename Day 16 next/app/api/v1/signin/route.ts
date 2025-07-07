@@ -9,10 +9,10 @@ import { NextRequest } from "next/server";
 // }
 
 export async function POST() {
-  
+ 
     return NextResponse.json({
-         username: body.username,
-    password: body.password,
-    message: "Signin Successfully"
+    //      username: body.username,
+    // password: body.password,
+    // message: "Signin Successfully"
     })
    }
