@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^6.11.1",
     "@types/mongoose": "^5.11.96",
     "axios": "^1.10.0",
     "mongoose": "^8.16.2",
     "next": "15.3.5",
+    "prisma": "^6.11.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
