@@ -35,6 +35,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+
+how to create Next js project
+npx creaate-next-app@latest
+
+
 npm install mongoose @types/mongoose for install mongoose
 
 

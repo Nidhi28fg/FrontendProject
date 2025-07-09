@@ -1,0 +1,15 @@
+{
+  "name": "day-17-typescript-and-node",
+  "version": "1.0.0",
+  "description": "create Node js Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}

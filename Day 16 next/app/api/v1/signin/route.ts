@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     // })
     await prismaClient.user.create ({
         data: {
-            username: data.username,
+            username: data.username, 
             password: data.password
         }
     })
@@ -36,13 +36,14 @@ return NextResponse.json({
 //  })
 // }
 
-export async function GET(req: NextRequest) {
-    const data = await prismaClient.user.findMany();
+// export async function GET(req: NextRequest) {
+//     const data = await prismaClient.user.findMany();
 
-    return NextResponse.json({
-        username: data[0].username,
-        password: data[0].password,
-        message: "Data fetched successfully",
+//     return NextResponse.json({
+//         username: data[0].username,
+//         password: data[0].password,
+//         message: "Data fetched successfully",
 
-    })
-}
+
+//     })
+// }
